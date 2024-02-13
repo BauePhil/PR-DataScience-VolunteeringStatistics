@@ -1,0 +1,96 @@
+{
+    "Geschlecht": [
+        {"id":0, "category":"Männer", "frequency":0.2168, "type":"Nur Informelle Freiwilligentätigkeit"},
+        {"id":1, "category":"Männer", "frequency":0.1501, "type":"Nur Formelle Freiwilligentätigkeit"},
+        {"id":2, "category":"Männer", "frequency":0.1530, "type":"Informelle und Formelle Freiwilligentätigkeit"},
+        
+        {"id":3, "category":"Frauen", "frequency":0.2608, "type":"Nur Informelle Freiwilligentätigkeit"},
+        {"id":4, "category":"Frauen", "frequency":0.1062, "type":"Nur Formelle Freiwilligentätigkeit"},
+        {"id":5, "category":"Frauen", "frequency":0.1131, "type":"Informelle und Formelle Freiwilligentätigkeit"}
+    ],
+    "Alter": [
+        {"id":0, "category":"<30", "frequency":0.0865, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":1, "category":"<30", "frequency":0.0573, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":2, "category":"<30", "frequency":0.0442, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":3, "category":"30-39", "frequency":0.0905, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":4, "category":"30-39", "frequency":0.0444, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":5, "category":"30-39", "frequency":0.0421, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":6, "category":"40-49", "frequency":0.0760, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":7, "category":"40-49", "frequency":0.0420, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":8, "category":"40-49", "frequency":0.0527, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":9, "category":"50-59", "frequency":0.0951, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":10, "category":"50-59", "frequency":0.0506, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":11, "category":"50-59", "frequency":0.0562, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":12, "category":"60-69", "frequency":0.0797, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":13, "category":"60-69", "frequency":0.0312, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":14, "category":"60-69", "frequency":0.0416, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":15, "category":"70-79", "frequency":0.0333, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":16, "category":"70-79", "frequency":0.0210, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":17, "category":"70-79", "frequency":0.0229, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":18, "category":">=80", "frequency":0.0164, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":19, "category":">=80", "frequency":0.0100, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":20, "category":">=80", "frequency":0.0064, "type": "Informelle und Formelle Freiwilligentätigkeit"}
+    ],
+    "Ausbildung": [
+        {"id":0, "category":"(max.) Pflichtschule", "frequency":0.0762, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":1, "category":"(max.) Pflichtschule", "frequency":0.0334, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":2, "category":"(max.) Pflichtschule", "frequency":0.0258, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":3, "category":"Lehre, BMS", "frequency":0.2190, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":4, "category":"Lehre, BMS", "frequency":0.1143, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":5, "category":"Lehre, BMS", "frequency":0.1176, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":6, "category":"Matura", "frequency":0.0881, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":7, "category":"Matura", "frequency":0.0504, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":8, "category":"Matura", "frequency":0.0548, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":9, "category":"Universität", "frequency":0.0943, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":10, "category":"Universität", "frequency":0.0582, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":11, "category":"Universität", "frequency":0.0679, "type": "Informelle und Formelle Freiwilligentätigkeit"}
+    ],
+    "Staatsbürgerschaft": [
+        {"id":0, "category":"Österreich", "frequency":0.4060, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":1, "category":"Österreich", "frequency":0.2314, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":2, "category":"Österreich", "frequency":0.2397, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":3, "category":"Nicht-Österreich", "frequency":0.0715, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":4, "category":"Nicht-Österreich", "frequency":0.0250, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":5, "category":"Nicht-Österreich", "frequency":0.0263, "type": "Informelle und Formelle Freiwilligentätigkeit"}
+        
+    ], 
+    "Teilnahme am Erwerbsleben": [
+        {"id":0, "category":"Selbsttändig erwerbstätig", "frequency":0.0039, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":1, "category":"Selbsttändig erwerbstätig", "frequency":0.0025, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":2, "category":"Selbsttändig erwerbstätig", "frequency":0.0021, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":3, "category":"Unselbständig Erwerbstätig", "frequency":0.2535, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":4, "category":"Unselbständig Erwerbstätig", "frequency":0.1524, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":5, "category":"Unselbständig Erwerbstätig", "frequency":0.1575, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":6, "category":"arbeitssuchend, arbeitslos", "frequency":0.0230, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":7, "category":"arbeitssuchend, arbeitslos", "frequency":0.0042, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":8, "category":"arbeitssuchend, arbeitslos", "frequency":0.0046, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":9, "category":"in Pension", "frequency":0.1135, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":10, "category":"in Pension", "frequency":0.0531, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":11, "category":"in Pension", "frequency":0.0596, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":12, "category":"in Ausbildung", "frequency":0.0384, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":13, "category":"in Ausbildung", "frequency":0.0259, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":14, "category":"in Ausbildung", "frequency":0.0185, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":15, "category":"Haushaltsführend", "frequency":0.0290, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":16, "category":"Haushaltsführend", "frequency":0.0137, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":17, "category":"Haushaltsführend", "frequency":0.0112, "type": "Informelle und Formelle Freiwilligentätigkeit"},
+
+        {"id":18, "category":"sonstiges", "frequency":0.0162, "type": "Nur Informelle Freiwilligentätigkeit"},
+        {"id":19, "category":"sonstiges", "frequency":0.0045, "type": "Nur Formelle Freiwilligentätigkeit"},
+        {"id":20, "category":"sonstiges", "frequency":0.0126, "type": "Informelle und Formelle Freiwilligentätigkeit"}
+    ]
+}

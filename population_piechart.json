@@ -1,0 +1,40 @@
+{
+    "Tätigkeit": [
+        {"id":0, "category":"keine Freiwilligentätigkeit", "frequency":0.5065},
+        {"id":1, "category":"Nur Informelle Freiwilligentätigkeit", "frequency":0.2357},
+        {"id":2, "category":"Nur Formelle Freiwilligentätigkeit", "frequency":0.1265},
+        {"id":3, "category":"Informelle und Formelle Freiwilligentätigkeit", "frequency":0.1313}
+    ],
+    "Geschlecht": [
+        {"id":0, "category":"Männer", "frequency":0.5199},
+        {"id":1, "category":"Frauen", "frequency":0.4801}
+    ],
+    "Alter": [
+        {"id":0, "category":"<30", "frequency":0.1880},
+        {"id":1, "category":"30-39", "frequency":0.1770},
+        {"id":2, "category":"40-49", "frequency":0.1708},
+        {"id":3, "category":"50-59", "frequency":0.2019},
+        {"id":4, "category":"60-69", "frequency":0.1524},
+        {"id":5, "category":"70-79", "frequency":0.0772},
+        {"id":6, "category":">=80", "frequency":0.0328}
+    ],
+    "Ausbildung": [
+        {"id":0, "category":"(max.) Pflichtschule", "frequency":0.1354},
+        {"id":1, "category":"Lehre, BMS", "frequency":0.4509},
+        {"id":2, "category":"Matura", "frequency":0.1933},
+        {"id":3, "category":"Universität", "frequency":0.2204}
+    ],
+    "Staatsbürgerschaft": [
+        {"id":0, "category":"Österreich", "frequency":0.8771},
+        {"id":1, "category":"Nicht-Österreich", "frequency":0.1229}
+    ], 
+    "Teilnahme am Erwerbsleben": [
+        {"id":0, "category":"Selbsttändig erwerbstätig", "frequency":0.0085},
+        {"id":1, "category":"Unselbständig Erwerbstätig", "frequency":0.5636},
+        {"id":2, "category":"arbeitssuchend, arbeitslos", "frequency":0.0318},
+        {"id":3, "category":"in Pension", "frequency":0.2261},
+        {"id":4, "category":"in Ausbildung", "frequency":0.0827},
+        {"id":5, "category":"Haushaltsführend", "frequency":0.0540},
+        {"id":6, "category":"sonstiges", "frequency":0.0333}
+    ]
+}
