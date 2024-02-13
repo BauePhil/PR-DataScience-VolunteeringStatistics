@@ -1,0 +1,20 @@
+{
+    "Geschlecht": [
+      {"id":0, "category":"male", "frequency":0.52},
+      {"id":1, "category":"female", "frequency":0.48}
+    ],
+    "Alter": [
+      {"id":0, "category":"under 40", "frequency":0.365},
+      {"id":1, "category":"40-59", "frequency":0.373},
+      {"id":2, "category":"60 and over", "frequency":0.263}
+    ],
+    "Ausbildung": [
+
+    ],
+    "Staatsbürgerschaft": [
+
+    ], 
+    "Teilnahme am Erwerbsleben": [
+
+    ]
+}
