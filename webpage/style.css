@@ -1,0 +1,112 @@
+/**
+ * CSS from the Layout Generator/Tool
+ */
+ .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 60px 1fr 60px;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .nav {
+    grid-area: nav;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content {
+    grid-area: content;
+  }
+  
+  /**
+   * Custom CSS added here 
+   */
+  body {
+    font-family: "Raleway", sans-serif;
+    background-color: #fffffe;
+    padding: 1rem;
+  }
+  .container {
+    max-width: 1600px;
+    height: calc(100vh - 3rem);
+    margin: 0 auto;
+  }
+  .container > * {
+    display: grid;
+    place-content: center;
+    border-radius: 1px;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    box-shadow: 0 1px 6px 0 hsl(0, 0%, 0%, 20%);
+  }
+  .header,
+  .footer,
+  .nav {
+    color: hsl(22, 78%, 26%);
+    background-color: hsl(48, 96%, 89%);
+  }
+  .sidebar {
+    color: hsl(177, 51%, 23%);
+    background-color: hsl(177, 51%, 82%);
+  }
+  
+  @media (max-width: 1600px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 60px 60px auto 60px;
+      grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "footer";
+    }
+  }
+  
+  /*main content div style*/
+  .content {
+    display: grid;
+    color: hsl(177, 51%, 23%);
+    background-color: hsl(177, 51%, 93%);
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 0.3fr 1fr 1fr 1.7fr;*/
+    grid-template-rows: 100px 500px 500px 1000px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Selects Selects"
+      "Bar-Chart Pie-Chart"
+      "Stacked-Bar-Chart Stacked-Bar-Chart"
+      "Sunburst Sunburst";
+  }
+  .Selects {
+    grid-area: Selects;
+  }
+  .Bar-Chart {
+    grid-area: Bar-Chart;
+  }
+  .Pie-Chart {
+    grid-area: Pie-Chart;
+  }
+  .Stacked-Bar-Chart {
+    grid-area: Stacked-Bar-Chart;
+  }
+  .Sunburst {
+    grid-area: Sunburst;
+  }
+  
