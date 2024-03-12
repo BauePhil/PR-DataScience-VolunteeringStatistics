@@ -12,14 +12,27 @@
       "nav"
       "content"
       "footer";
+    min-width: 1000px;
+  }
+
+  div {
+    border: 1px solid #CCC;
   }
   
   .header {
     grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .nav {
     grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
   
   .footer {
@@ -38,8 +51,9 @@
    * Custom CSS added here 
    */
   body {
-    font-family: "Raleway", sans-serif;
-    background-color: #fffffe;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    background-color: #ffffff;
     padding: 1rem;
   }
   .container {
@@ -48,22 +62,21 @@
     margin: 0 auto;
   }
   .container > * {
-    display: grid;
-    place-content: center;
+    /*display: grid;
+    place-content: center;*/
     border-radius: 1px;
     font-size: 1rem;
     letter-spacing: 0.05rem;
-    box-shadow: 0 1px 6px 0 hsl(0, 0%, 0%, 20%);
   }
   .header,
   .footer,
   .nav {
-    color: hsl(22, 78%, 26%);
-    background-color: hsl(48, 96%, 89%);
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
   }
   .sidebar {
-    color: hsl(177, 51%, 23%);
-    background-color: hsl(177, 51%, 82%);
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
   }
   
   @media (max-width: 1600px) {
@@ -81,32 +94,42 @@
   /*main content div style*/
   .content {
     display: grid;
-    color: hsl(177, 51%, 23%);
-    background-color: hsl(177, 51%, 93%);
+    /*color: hsl(177, 51%, 23%);*/
+    background-color: hsl(0, 0%, 100%);
     grid-template-columns: 1fr 1fr;
     /*grid-template-rows: 0.3fr 1fr 1fr 1.7fr;*/
     grid-template-rows: 100px 500px 500px 1000px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Selects Selects"
-      "Bar-Chart Pie-Chart"
-      "Stacked-Bar-Chart Stacked-Bar-Chart"
-      "Sunburst Sunburst";
+      "selects selects"
+      "barchart pichart"
+      "stacked_barchart stacked_barchart"
+      "sunburst sunburst";
   }
-  .Selects {
-    grid-area: Selects;
+
+  div svg {
+    border: 1px solid #CCC;
   }
-  .Bar-Chart {
-    grid-area: Bar-Chart;
+
+  .content div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .Pie-Chart {
-    grid-area: Pie-Chart;
+  .selects {
+    grid-area: selects;
   }
-  .Stacked-Bar-Chart {
-    grid-area: Stacked-Bar-Chart;
+  .barchart {
+    grid-area: barchart;
   }
-  .Sunburst {
-    grid-area: Sunburst;
+  .piechart {
+    grid-area: pichart;
+  }
+  .stacked_barchart {
+    grid-area: stacked_barchart;
+  }
+  .sunburst {
+    grid-area: sunburst;
   }
   
