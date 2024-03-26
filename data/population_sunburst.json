@@ -52,7 +52,7 @@
                 ]}
             ]
         },
-        "Staatsbuergerschaft": {
+        "Staatsbürgerschaft": {
             "name": "Freiwilligentätigkeit nach Staatsbuergerschaft", "children":[
                 {"name":"nicht freiwillig tätig", "value": 0.506},
                 {"name": "freiwillig tätig", "children": [
@@ -220,7 +220,7 @@
             ]
         },
 
-        "Staatsbuergerschaft": {
+        "Staatsbürgerschaft": {
             "name": "Freiwilligentätigkeit nach Staatsbuergerschaft", "children":[
                 {"name":"nicht freiwillig tätig", "value": 0.506},
                 {"name": "freiwillig tätig", "children": [

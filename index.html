@@ -3,22 +3,145 @@
   <head>
     <title>Österreichs Freiwilligen Tätigkeit</title>
     <script src="d3.js"></script>
-    <script type="module" src="population_sunburst.js"></script>
-    <script type="module" src="population.js"></script>
+    <script src="d3-color-legend.js"></script>
+    <script type="module" src="plot_script.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 align="center" style="font-family: Arial, Helvetica, sans-serif">Statistik zu Österreichs Freiwilligen Tätigkeit</h1>
-    <hr>
-    <div id="sunburst"></div>
-    <hr>
-    <select id="category">
-      <option>Tätigkeit</option>
-      <option>Geschlecht</option>
-      <option>Alter</option>
-      <option>Staatsbürgerschaft</option>
-      <option>Teilnahme am Erwerbsleben</option>
-    </select>
-    <div id="barchart"></div>
-    <div id="piechart"></div>
-  </body>
+    <div class="container">
+        <div class="header">
+          <div><img src="JKU_Logo.png" style="height: 50px"></div>
+          <div style="font-size:20pt; font-weight:bold;">Statistik für Freiwilligenarbeit in Österreich für 2022</div>
+          <div><img src="BMSGPK_Logo.png" style="height: 50px"></div>
+        </div>
+
+        <div class="nav">
+            <span><a href="#who">WER?</a></span>
+            <span><a href="#what">WAS?</a></span>
+            <span><a href="#why">WARUM?</a></span>
+        </div>
+
+        <div class="footer">Footer</div>
+
+        <div class="content">
+          <!--WHO-->
+          <div id="who" class="who_explainer">
+            <div class="explainer_header">Wer ist in Österreich freiwillig tätig?</div>
+            In diesem Kapitel wird dargestellt, wie sich die Verteilung der Personen die sich freiwillig angagieren zusammensetzt.
+            Mit Hilfe der Grundgesamtheit kann sich aber gleichzeitig die absolute Anzahl an Personen errechnet werden.
+            Über verschiedene Arten an Diagrammen soll dargestellt werden, dass einige Verbesserungen an den originalen Diagrammen getätigt werden können.
+            Obwohl die hier gezeigten Daten im bereitgestellten Datensatz [<a>1</a>] nicht direkt inkludiert sind, konnten diese einfach errechnet werden [<a>2</a>].
+            Leider befinden sich im bereitgestellten Datensatz lediglich die bereits aufbereiteten Daten, also nicht die ausgefüllten Fragebögen (z.B. annonymisiert). 
+            Mit diesen hätte man noch einiges mehr machen können.
+          </div>
+
+          <div class="selects">
+            Auswahl der Kategorie:&nbsp;
+            <select id="category">
+              <option>Geschlecht</option>
+              <option>Alter</option>
+              <option>Staatsbürgerschaft</option>
+              <option>Teilnahme am Erwerbsleben</option>
+              <option>Tätigkeit</option>
+            </select>
+            &nbsp;<i>(gilt für die nachfolgen Abbildungen dieses Kapitels)</i>
+          </div>
+
+          <div class="barchart">
+            <div id="barchart"></div>
+            <div class="figure_text"><b>Abbildung 1.1: Standard Balkendiagram</b> - 
+              Verteilung der Merkmale der ausgewählten Kategorie. (Grundgesamtheit: 3.73 Mio.)</div>
+          </div>
+
+          <div class="piechart">
+            <div id="piechart"></div>
+            <div class="figure_text"><b>Abbildung 1.2: Tortendiagram</b> - 
+              Verteilung der Merkmale der ausgewählten Kategorie. (Grundgesamtheit: 3.73 Mio.)</div>
+          </div>
+
+          <div id="stacked_div" class="stacked_barchart">
+            <div id="stacked_chart_legend"></div>
+            <div id="stacked_barchart"></div>
+            <div class="figure_text"><b>Abbildung 2: Gestapeltes Balkendiagram</b> - 
+              Verteilung der Merkmale der ausgewählten Kategorie, gestapelten über die Art der Freiwilligentätigkeit. 
+              (Grundgesamtheit: 3.73 Mio.)</div>
+          </div>
+
+          <div id="sunburst_div" class="sunburst">
+            <div>Auswahl der Art der Freiwilligen Arbeit:&nbsp;
+            <select id="sunburst_select">
+              <option>Gesamt</option>
+              <option>Nach Freiwilligentätigkeitsform</option>
+            </select></div>
+            <div id="sunburst"></div>
+            <div class="figure_text"><b>Abbildung 3: Zoomable Sunburst</b> - 
+              Interactives Diagram der Verteilung der ausgewählten Kategorie. 
+              Zusätzlich kann die Gruppierung der Art der Freiwilligenarbeit gewählt werden. 
+              (Grundgesamtheit: 7.55 Mio.)</div>
+          </div>
+
+          <div id="time_linechart_div" class="time_line_chart">
+            <div id="time_linechart"></div>
+            <div class="figure_text"><b>Abbildung 4.1: Liniendiagram</b> - 
+              Abbildung der Beteiligungsrate des jeweiligen Merkmals. z.B.: Im Jahr 2014 beteiligten sich 43%
+              der 15-29 Jährigen an einer Art Freiwilligentätigkeit und die restlichen 57% nicht. 
+              Grundgesamtheit ist die Einwohnerzahl des jeweiligen Jahres</div>
+          </div>
+          <div  id="time_barchart_div" class="time_bar_chart">
+            <div id="time_bar_legend"></div>
+            <div id="time_barchart"></div>
+            <div class="figure_text"><b>Abbildung 4.2: Gruppiertes Balkendiagram</b> - 
+              Abbildung unterliegt dem selben Datansatz von Abbildung 4.1, 
+              visualisiert dies jedoch in Form eines Balkendiagrams, 
+              wobei die einzelnen Balken die Werte des jewiligen Jahres wiedergeben.</div>
+          </div>
+
+          <!--WHAT-->
+          <div id="what" class="what_explainer">
+            <div class="explainer_header">Welche Art from Freiwilligentätigkeit wird durchgeführt?</div>
+            Erklärung...
+          </div>
+
+          <div class="worktype">
+            <div class="worktype_select_div">
+              Auswahl der Kategorie:&nbsp;
+              <select id="worktype_category_select">
+                <option>Gesamt</option>
+                <option>Geschlecht</option>
+                <option>Alter</option>
+                <option>Ausbildung</option>
+              </select>
+              &nbsp;Auswahl des Tätigkeitstyps:&nbsp;
+              <select id="worktype_type_select">
+                <option>Formelle Freiwilligentätigkeit</option>
+                <option>Informelle Freiwilligentätigkeit</option>
+              </select>
+            </div>
+            <div id="worktype_legend"></div>
+            <div id="worktype"></div>
+            <div class="figure_text"><b>Abbildung 5: Gruppiertes Balkendiagram</b> - 
+              Zeigt die Beteiligung an den jewiligen Typen der Freiwilligenarbeit. 
+              Mehrfachnennung möglich, Summe ergibt also nicht 100%. Grundgesamtheit ist 1.95 Mio. formelle 
+              und 2.77 Mio. informelle freiwillig Tätige.</div>
+          </div>
+          
+          <!--WHY-->
+          <div id="why" class="why_explainer">
+            <div class="explainer_header">Warum entscheiden sich Personen für oder gegen Freiwilligentätigkeit?</div>
+            Erklärung...
+          </div>
+
+          <div class="why">
+            <div id="why_legend"></div>
+            <div id="why_yes">Yes</div>
+            <div class="figure_text"><b>Abbildung 6.1: Divergierendes Gestapeltes Balkendiagram</b> - 
+              Zeigt den Grad der Zustimmung zu den jeweiligen Aussagen warum sich die Personen dazu entscheiden haben
+              Freiwilligenarbeit auszuüben. (Grundgesamtheit: 2.77 Mio.)</div>
+            <div id="why_no">No</div>
+            <div class="figure_text"><b>Abbildung 6.2: Divergierendes Gestapeltes Balkendiagram</b> - 
+              Zeigt den Grad der Zustimmung zu den jeweiligen Aussagen warum befragte Personen
+              keine Freiwilligenarbeit auszuüben. (Grundgesamtheit: 4.78 Mio.)</div>
+          </div>
+        </div> 
+    </div>
 </html>

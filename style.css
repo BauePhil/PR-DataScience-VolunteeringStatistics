@@ -1,0 +1,195 @@
+/**
+ * CSS from the Layout Generator/Tool
+ */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 60px 1fr 60px;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "footer";
+  min-width: 1000px;
+}
+
+.figure_text {
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+}
+.explainer_header {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(4, 110, 152);
+  color: white;
+  padding: 5px;
+}
+.who_explainer, .what_explainer, .why_explainer{
+  border: 2px solid rgb(4, 110, 152);
+}
+
+/* div {
+  border: 1px solid #CCC;
+} */
+/* div svg {
+  border: 1px solid #CCC;
+} */
+
+.header {
+  border: 2px solid black;
+  padding: 2px;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  border: 2px solid black;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  /*font-weight: bold;*/
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.container {
+  max-width: 1600px;
+  height: calc(100vh - 3rem);
+  margin: 0 auto;
+}
+.container > * {
+  /*display: grid;
+  place-content: center;*/
+  border-radius: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+.header,
+.footer,
+.nav {
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
+}
+.sidebar {
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 1600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 30px auto 60px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
+  }
+}
+
+/*main content div style*/
+.content {
+  display: grid;
+  /*color: hsl(177, 51%, 23%);*/
+  background-color: hsl(0, 0%, 100%);
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-rows: 0.3fr 1fr 1fr 1.7fr;*/
+  grid-template-rows: auto;
+  gap: 20px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "who-explainer who-explainer"
+    "selects selects"
+    "barchart pichart"
+    "stacked_barchart stacked_barchart"
+    "sunburst sunburst"
+    "time_line_chart time_bar_chart"
+    "what_explainer what_explainer"
+    "worktype worktype"
+    "why_explainer why_explainer"
+    "why why";
+}
+
+.content div {
+  align-items: center;
+  justify-content: center;
+}
+
+.who_explainer {
+  grid-area: who-explainer;
+}
+.selects {
+  grid-area: selects;
+  display: flex;
+}
+.barchart {
+  grid-area: barchart;
+  display: flex;
+  flex-direction: column;
+}
+.piechart {
+  grid-area: pichart;
+  display: flex;
+  flex-direction: column;
+}
+.stacked_barchart {
+  grid-area: stacked_barchart;
+  display: flex;
+  flex-direction: column;
+}
+.sunburst {
+  grid-area: sunburst;
+  display: flex;
+  flex-direction: column;
+}
+.time_line_chart {
+  grid-area: time_line_chart;
+  display: flex;
+  flex-direction: column;
+}
+.time_bar_chart {
+  grid-area: time_bar_chart;
+  display: flex;
+  flex-direction: column;
+}
+.what_explainer {
+  grid-area: what_explainer;
+}
+.worktype {
+  grid-area: worktype;
+  display: flex;
+  flex-direction: column;
+}
+.why_explainer {
+  grid-area: why_explainer;
+}
+.why {
+  grid-area: why;
+  display: flex;
+  flex-direction: column;
+}
+  
