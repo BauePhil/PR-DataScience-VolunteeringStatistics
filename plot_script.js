@@ -214,10 +214,10 @@ stacked_chart_legend.append(Legend(d3.scaleOrdinal(["Nur Informelle Freiwilligen
 plot(stacked_barchart, plot_stacked_barchart, stacked_chart_data["Geschlecht"])
 function plot_stacked_barchart(data){
     // Specify the chart’s dimensions.
-    const width = 980;
+    const width = 1000;
     const height = 420;
     const marginTop = 10;
-    const marginRight = 10;
+    const marginRight = 20;
     const marginBottom = 20;
     const marginLeft = 40;
     
@@ -419,7 +419,7 @@ function plot_time_line_chart(data) {
     const marginTop = 20;
     const marginRight = 75;
     const marginBottom = 25;
-    const marginLeft = 25;
+    const marginLeft = 35;
     
     // Create the horizontal, vertical and color scales.
     const x = d3.scaleLinear()
@@ -447,7 +447,7 @@ function plot_time_line_chart(data) {
     
     svg.append("g")
         .attr("transform", `translate(${marginLeft},0)`)
-        .call(d3.axisLeft(y))
+        .call(d3.axisLeft(y).tickFormat(v => `${v}%`))
         .call(g => g.selectAll(".domain").remove());
     
     // Add a container for each series.
@@ -564,7 +564,7 @@ function plot_time_bar_chart(data) {
     // Append the vertical axis.
     svg.append("g")
         .attr("transform", `translate(${marginLeft},0)`)
-        .call(d3.axisLeft(y).ticks(null, "s"))
+        .call(d3.axisLeft(y).tickFormat(v => `${v}%`))
         .call(g => g.selectAll(".domain").remove());
     
     // Return the chart with the color scale as a property (for the legend).
